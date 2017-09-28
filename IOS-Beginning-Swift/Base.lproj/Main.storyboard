@@ -39,6 +39,13 @@
                                     <action selector="clickWithIBAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zog-14-hm3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WE-0w-JGt">
+                                <rect key="frame" x="128" y="414" width="119" height="30"/>
+                                <state key="normal" title="Go Other Screem"/>
+                                <connections>
+                                    <segue destination="Dsb-qV-67G" kind="show" id="PQp-Mh-Goo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -48,7 +55,9 @@
                             <constraint firstItem="6Ay-aq-DZJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RYv-KN-NVw"/>
                             <constraint firstItem="usN-pw-5rw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZZn-tm-1lP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qVc-Kx-wUS" secondAttribute="trailing" constant="112" id="heE-Ek-oSE"/>
+                            <constraint firstItem="7WE-0w-JGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jAa-go-AWz"/>
                             <constraint firstItem="6Ay-aq-DZJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mdg-3r-FID"/>
+                            <constraint firstItem="7WE-0w-JGt" firstAttribute="top" secondItem="usN-pw-5rw" secondAttribute="bottom" constant="16" id="qlO-2s-mLf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,6 +68,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="178" y="88"/>
+        </scene>
+        <!--Other View Controller-->
+        <scene sceneID="9UJ-Ru-43S">
+            <objects>
+                <viewController id="Dsb-qV-67G" customClass="OtherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IYD-ua-lHE"/>
+                        <viewControllerLayoutGuide type="bottom" id="gIF-Zd-7Jo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EbB-xK-cY4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screem 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6W-Wz-WMx">
+                                <rect key="frame" x="151" y="323" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A6W-Wz-WMx" firstAttribute="centerX" secondItem="EbB-xK-cY4" secondAttribute="centerX" id="5kH-LV-2iI"/>
+                            <constraint firstItem="A6W-Wz-WMx" firstAttribute="centerY" secondItem="EbB-xK-cY4" secondAttribute="centerY" id="7Ct-5j-fno"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sa2-Xm-Cga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="88"/>
         </scene>
     </scenes>
 </document>
