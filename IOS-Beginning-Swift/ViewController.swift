@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clickWithIBAction(_ sender: UIButton) {
+        let input = eteJoin.text
+        print("button clickWithIBAction \(input!)")
+    }
 
 }
 
